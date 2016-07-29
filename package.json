@@ -1,0 +1,32 @@
+{
+  "name": "@fridacai/widget",
+  "version": "1.0.10",
+  "description": "ui widget",
+  "main": "./dist/app.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-webpack": "webpack -d --watch"
+  },
+  "keywords": [
+    "widget"
+  ],
+  "author": "Frida Cai <525311175@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.23.0",
+    "es6-promise": "^3.1.2",
+    "interact.js": "^1.2.6",
+    "jquery": "^1.11.3",
+    "jquery.ui.widget": "^1.10.3",
+    "less": "~2.5.3",
+    "less-loader": "^2.2.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "node-sass": "^3.6.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2"
+  }
+}
