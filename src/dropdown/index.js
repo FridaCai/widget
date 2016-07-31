@@ -276,20 +276,3 @@ $.widget("custom.cdropdown", {
     }
 });
 
-
-
-
-CDropDown.create($("#domContainer")[0], {
-    id: "id", //string.
-    defaultKey: "", //string. existed id in options.
-    options: [{
-        id: "op1Id",
-        label: "op1 label",
-    },{
-        id: "op2Id",
-        label: "op2 label",
-    }],
-    prompt: "drop down test", //if fail to find item in options by defautlKey, use prompt string.
-    onchange: function(){} //event triggered when selected item change.
- });
-
