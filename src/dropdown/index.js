@@ -52,6 +52,7 @@ case 1:
  });
 */
 import './style.less';
+require("jquery-widget");
 
 var CDropDown = function(container, param){
     this.instance = $(container).cdropdown(param);
@@ -274,4 +275,21 @@ $.widget("custom.cdropdown", {
         return this.options.defaultKey;
     }
 });
+
+
+
+
+CDropDown.create($("#domContainer")[0], {
+    id: "id", //string.
+    defaultKey: "", //string. existed id in options.
+    options: [{
+        id: "op1Id",
+        label: "op1 label",
+    },{
+        id: "op2Id",
+        label: "op2 label",
+    }],
+    prompt: "drop down test", //if fail to find item in options by defautlKey, use prompt string.
+    onchange: function(){} //event triggered when selected item change.
+ });
 

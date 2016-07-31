@@ -3,16 +3,15 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        app:'./index2.js',
+        CDropDown:'./src/dropdown/index.js',
     },
     output: {
         path: './dist',
-        filename: "MyLibrary.[name].js",
-        library: ["MyLibrary", "[name]"],
+        filename: "Lib.[name].js",
+        library: ["Lib", "[name]"],
         libraryTarget: "umd"
     },
-    externals: {
-    },
+    
     module: {
         loaders: [
             {
@@ -40,7 +39,16 @@ module.exports = {
         new webpack.ProvidePlugin({
             React: "react",
             ReactDOM: "react-dom",
+            "$": "jquery",
+            "jQuery":"jquery",
+            "window.jQuery":"jquery"
         })
     ],
     cache: false,
+    resolve: {
+        alias: {
+            "jquery-widget": "jquery.ui.widget/jquery.ui.widget.js",      
+            modules: path.join(__dirname, "node_modules")
+        }
+    }
 };
