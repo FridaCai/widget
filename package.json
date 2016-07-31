@@ -2,7 +2,7 @@
   "name": "@fridacai/widget",
   "version": "1.0.14",
   "description": "ui widget",
-  "main": "./dist/app.bundle.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-webpack": "webpack -d --watch"

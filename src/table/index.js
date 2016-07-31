@@ -147,7 +147,6 @@ var Table = React.createClass({
                 </div>
             )
         }catch(e){
-            debugger;
             console.log(e.stack);
         }
     },
