@@ -1,6 +1,6 @@
 {
   "name": "@fridacai/widget",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "ui widget",
   "main": "./dist/app.bundle.js",
   "scripts": {
