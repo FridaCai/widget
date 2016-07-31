@@ -9,6 +9,5 @@ exports.CDropDown = CDropDown;*/
 console.log(Test);*/
 
 
-var CDropdown = require('./dist/Lib.CDropDown.js');
+exports.CDropdown = require('./dist/Lib.CDropDown.js');
 
-console.log(CDropdown);
