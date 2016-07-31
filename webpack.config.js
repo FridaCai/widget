@@ -3,11 +3,15 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        app:['./index.js'],
+        app:'./index2.js',
     },
     output: {
         path: './dist',
-        filename: '[name].bundle.js',
+        filename: "MyLibrary.[name].js",
+        library: ["MyLibrary", "[name]"],
+        libraryTarget: "umd"
+    },
+    externals: {
     },
     module: {
         loaders: [

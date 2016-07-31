@@ -1,4 +1,7 @@
-var Add = function(a,b){
-	return a+b;
+import Add from './index3.js';
+
+var Calc = function(a,b){
+	return Add(a,b);
 }
-module.exports = Add;
+module.exports = Calc;
+

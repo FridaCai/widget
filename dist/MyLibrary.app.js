@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["app"] = factory();
+	else
+		root["MyLibrary"] = root["MyLibrary"] || {}, root["MyLibrary"]["app"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -42,46 +52,28 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!*****************!*\
-  !*** multi app ***!
-  \*****************/
+/*!*******************!*\
+  !*** ./index2.js ***!
+  \*******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./index.js */1);
-
-
-/***/ },
-/* 1 */
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/*import CDropDown from './src/dropdown/index.js';
-	exports.CDropDown = CDropDown;*/
-	
-	//'use strict';
-	//module.exports.CDropDown = require('./src/dropdown/index.js');
-	
 	'use strict';
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _index2Js = __webpack_require__(/*! ./index2.js */ 2);
+	var _index3Js = __webpack_require__(/*! ./index3.js */ 1);
 	
-	var _index2Js2 = _interopRequireDefault(_index2Js);
+	var _index3Js2 = _interopRequireDefault(_index3Js);
 	
-	var Test = function Test() {
-		console.log('Hello, this is npm module. add result: ' + (0, _index2Js2['default'])(1, 2));
+	var Calc = function Calc(a, b) {
+		return (0, _index3Js2['default'])(a, b);
 	};
-	module.exports = Test;
-	
-	Test();
+	module.exports = Calc;
 
 /***/ },
-/* 2 */
+/* 1 */
 /*!*******************!*\
-  !*** ./index2.js ***!
+  !*** ./index3.js ***!
   \*******************/
 /***/ function(module, exports) {
 
@@ -93,5 +85,7 @@
 	module.exports = Add;
 
 /***/ }
-/******/ ]);
-//# sourceMappingURL=app.bundle.js.map
+/******/ ])
+});
+;
+//# sourceMappingURL=MyLibrary.app.js.map
